@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Düyası</title>
+</head>
+<body>
+    <h1>Merhaba!</h1>
+    <p>Pixel Dünyası 
+Pixel Dünyasına Hoşgeldin
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h1 { color: red; }
+    p { color: black; }
+  </style>
+</head>
+<body>
+  <h1>Pixel Dünyası</h1>
+  
+</body>
+</html><!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güzel Web Sayfam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Siteme Hoş Geldiniz!</h1>
+        <p>Bu sayfa HTML ve CSS ile güzelleştirildi.</p>
+
+        <h2>Hakkımda</h2>
+        <p>Web Siteme Hoşgeldin Bunun Daha İyisii Yapmayı Düşünüyorum!</p>
+
+        <h2>İletişim</h2>
+        <p>Bana <a href="mailto:ornek@mail.com">e-posta</a> gönderebilirsiniz.</p>
+
+        <h2>Görsel</h2>
+        <img src="https://via.placeholder.com/600x300" alt="Örnek Görsel">
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Yap / Kayıt Ol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ecf0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .toggle {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .toggle a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container" id="form">
+        <h2>Giriş Yap</h2>
+        <input type="email" placeholder="E-posta">
+        <input type="password" placeholder="Şifre">
+        <button>Giriş Yap</button>
+        <div class="toggle">
+            Hesabın yok mu? <a href="#" onclick="toggleForm()">Kayıt Ol</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            const form = document.getElementById('form');
+            form.innerHTML = `
+                <h2>Kayıt Ol</h2>
+                <input type="text" placeholder="Ad Soyad">
+                <input type="email" placeholder="E-posta">
+                <input type="password" placeholder="Şifre">
+                <button>Kayıt Ol</button>
+                <div class="toggle">
+                    Zaten hesabın var mı? <a href="#" onclick="location.reload()">Giriş Yap</a>
+                </div>
+            `;
+        }
+    </script>
+
+</body>
+</html>
+
+
+
